@@ -24,19 +24,22 @@ There is an issue with the content sometimes getting trapped behind the footer. 
 
 -->
 	
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Chore Helper</title>
+    <title>Chore Decision Helper</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="mobile-web-app-capable" content="yes">
+
     <link rel="stylesheet" href="w3.css">
     <link rel="stylesheet" href="w3-colors-flat.css">
 </head>
 
 <style>
-.body {
+
+body {
     margin: 0em;
 }
 
@@ -47,13 +50,11 @@ There is an issue with the content sometimes getting trapped behind the footer. 
     top: 0;
     left: -100vw;
     overflow-y: auto;
-    z-index: 0;
     background-color: white;
 }
 
 .page:target {
     left: 0vw;
-    z-index: 1;
 }
 
 img {
@@ -61,15 +62,23 @@ img {
     height: auto;
     display: block;
 }
+
+.button-space {
+    margin-top: 20px;
+}
+
 </style>
 
 <body>
+
+<!-- HOME PAGE -->
 
 <div id="header" class="w3-container w3-flat-nephritis">
     <h1>Chore Decision Helper</h1>
 </div>
 
-<div id="content" class="w3-container">
+<div class="w3-container">
+
     <br><br>
 
     <a href="#q1" class="w3-btn w3-blue w3-round">
@@ -77,209 +86,399 @@ img {
     </a>
 
     <p>
-        This app helps you decide what chore to do based on your mood,
-        energy level, and preferences.
+        This app helps users decide which chore to do based on their
+        mood, energy level, and preferences.
     </p>
 
-    <br><br><br>
 </div>
 
 <!-- QUESTION 1 -->
 
 <div class="page" id="q1">
+
     <div class="w3-container w3-flat-nephritis">
         <h1>Are you feeling energetic today?</h1>
     </div>
 
-    <div class="w3-container">
-        <br>
-        <a href="#q2a" class="w3-btn w3-green w3-round">Yes</a>
-        <a href="#q2b" class="w3-btn w3-red w3-round">No</a>
+    <div class="w3-container button-space">
+
+        <a href="#q2a" class="w3-btn w3-green w3-round">
+            Yes
+        </a>
+
+        <a href="#q2b" class="w3-btn w3-red w3-round">
+            No
+        </a>
+
     </div>
 </div>
 
-<!-- Energetic -->
+<!-- ENERGETIC -->
 
 <div class="page" id="q2a">
+
     <div class="w3-container w3-flat-nephritis">
         <h1>Would you rather be outside?</h1>
     </div>
 
-    <div class="w3-container">
-        <br>
-        <a href="#q3a" class="w3-btn w3-green w3-round">Yes</a>
-        <a href="#q3b" class="w3-btn w3-red w3-round">No</a>
+    <div class="w3-container button-space">
+
+        <a href="#q3a" class="w3-btn w3-green w3-round">
+            Yes
+        </a>
+
+        <a href="#q3b" class="w3-btn w3-red w3-round">
+            No
+        </a>
+
     </div>
 </div>
 
-<!-- Not Energetic -->
+<!-- LOW ENERGY -->
 
 <div class="page" id="q2b">
+
     <div class="w3-container w3-flat-nephritis">
         <h1>Do you want an easy chore?</h1>
     </div>
 
-    <div class="w3-container">
-        <br>
-        <a href="#q4a" class="w3-btn w3-green w3-round">Yes</a>
-        <a href="#q4b" class="w3-btn w3-red w3-round">No</a>
+    <div class="w3-container button-space">
+
+        <a href="#q4a" class="w3-btn w3-green w3-round">
+            Yes
+        </a>
+
+        <a href="#q4b" class="w3-btn w3-red w3-round">
+            No
+        </a>
+
     </div>
 </div>
 
-<!-- Outside -->
+<!-- OUTSIDE -->
 
 <div class="page" id="q3a">
+
     <div class="w3-container w3-flat-nephritis">
         <h1>Is the weather nice?</h1>
     </div>
 
-    <div class="w3-container">
-        <br>
-        <a href="#mow-lawn" class="w3-btn w3-green w3-round">Yes</a>
-        <a href="#rake-leaves" class="w3-btn w3-red w3-round">No</a>
+    <div class="w3-container button-space">
+
+        <a href="#q5a" class="w3-btn w3-green w3-round">
+            Yes
+        </a>
+
+        <a href="#q5b" class="w3-btn w3-red w3-round">
+            No
+        </a>
+
     </div>
 </div>
 
-<!-- Inside Energetic -->
+<!-- INSIDE -->
 
 <div class="page" id="q3b">
+
     <div class="w3-container w3-flat-nephritis">
         <h1>Do you want a quick chore?</h1>
     </div>
 
-    <div class="w3-container">
-        <br>
-        <a href="#clean-room" class="w3-btn w3-green w3-round">Yes</a>
-        <a href="#vacuum-house" class="w3-btn w3-red w3-round">No</a>
+    <div class="w3-container button-space">
+
+        <a href="#q6a" class="w3-btn w3-green w3-round">
+            Yes
+        </a>
+
+        <a href="#q6b" class="w3-btn w3-red w3-round">
+            No
+        </a>
+
     </div>
 </div>
 
-<!-- Easy Chore-->
+<!-- EASY -->
 
 <div class="page" id="q4a">
+
     <div class="w3-container w3-flat-nephritis">
         <h1>Would you rather sit down?</h1>
     </div>
 
-    <div class="w3-container">
-        <br>
-        <a href="#fold-laundry" class="w3-btn w3-green w3-round">Yes</a>
-        <a href="#wash-dishes" class="w3-btn w3-red w3-round">No</a>
+    <div class="w3-container button-space">
+
+        <a href="#q7a" class="w3-btn w3-green w3-round">
+            Yes
+        </a>
+
+        <a href="#q7b" class="w3-btn w3-red w3-round">
+            No
+        </a>
+
     </div>
 </div>
 
-<!-- Harder Chore -->
+<!-- HARDER -->
 
 <div class="page" id="q4b">
+
     <div class="w3-container w3-flat-nephritis">
         <h1>Do you want something satisfying?</h1>
     </div>
 
-    <div class="w3-container">
-        <br>
-        <a href="#deep-clean" class="w3-btn w3-green w3-round">Yes</a>
-        <a href="#organize-desk" class="w3-btn w3-red w3-round">No</a>
+    <div class="w3-container button-space">
+
+        <a href="#q8a" class="w3-btn w3-green w3-round">
+            Yes
+        </a>
+
+        <a href="#q8b" class="w3-btn w3-red w3-round">
+            No
+        </a>
+
     </div>
 </div>
 
-<!-- Results -->
+<!-- BRANCH QUESTIONS -->
+
+<div class="page" id="q5a">
+
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Do you want a big outdoor task?</h1>
+    </div>
+
+    <div class="w3-container button-space">
+
+        <a href="#mow-lawn" class="w3-btn w3-green w3-round">
+            Yes
+        </a>
+
+        <a href="#wash-car" class="w3-btn w3-red w3-round">
+            No
+        </a>
+
+    </div>
+</div>
+
+<div class="page" id="q5b">
+
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Do you still want to move around?</h1>
+    </div>
+
+    <div class="w3-container button-space">
+
+        <a href="#rake-leaves" class="w3-btn w3-green w3-round">
+            Yes
+        </a>
+
+        <a href="#take-trash" class="w3-btn w3-red w3-round">
+            No
+        </a>
+
+    </div>
+</div>
+
+<div class="page" id="q6a">
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Is your room messy?</h1>
+    </div>
+    <div class="w3-container button-space">
+        <a href="#clean-room" class="w3-btn w3-green w3-round">
+            Yes
+        </a>
+        <a href="#wipe-counters" class="w3-btn w3-red w3-round">
+            No
+        </a>
+    </div>
+</div>
+
+<div class="page" id="q6b">
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Do you want something productive?</h1>
+    </div>
+    <div class="w3-container button-space">
+
+        <a href="#deep-clean" class="w3-btn w3-green w3-round">
+            Yes
+        </a>
+        <a href="#vacuum-house" class="w3-btn w3-red w3-round">
+            No
+        </a>
+    </div>
+</div>
+
+<div class="page" id="q7a">
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Do you want to listen to music while working?</h1>
+    </div>
+    <div class="w3-container button-space">
+        <a href="#fold-laundry" class="w3-btn w3-green w3-round">
+            Yes
+        </a>
+        <a href="#wash-dishes" class="w3-btn w3-red w3-round">
+            No
+        </a>
+    </div>
+</div>
+
+<div class="page" id="q7b">
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Would you rather clean something small?</h1>
+    </div>
+    <div class="w3-container button-space">
+        <a href="#wipe-counters" class="w3-btn w3-green w3-round">
+            Yes
+        </a>
+        <a href="#take-trash" class="w3-btn w3-red w3-round">
+            No
+        </a>
+    </div>
+</div>
+
+<div class="page" id="q8a">
+
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Do you like seeing instant results?</h1>
+    </div>
+    <div class="w3-container button-space">
+        <a href="#deep-clean" class="w3-btn w3-green w3-round">
+            Yes
+        </a>
+        <a href="#vacuum-house" class="w3-btn w3-red w3-round">
+            No
+        </a>
+    </div>
+</div>
+
+<div class="page" id="q8b">
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Would you rather organize or clean?</h1>
+    </div>
+    <div class="w3-container button-space">
+
+        <a href="#clean-room" class="w3-btn w3-green w3-round">
+            Organize
+        </a>
+        <a href="#wash-dishes" class="w3-btn w3-red w3-round">
+            Clean
+        </a>
+    </div>
+</div>
+
+<!-- 10 TASKS -->
 
 <div class="page" id="mow-lawn">
-    <div class="w3-container w3-flat-nephritis">
-        <h1>Your chore is:</h1>
-    </div>
+<div class="w3-container w3-flat-nephritis">
+<h1>Your chore is:</h1>
+</div>
+<div class="w3-container">
+<h2>Mow the Lawn 🌱</h2>
+<img src="images/mow_lawn.jpg">
+</div>
+</div>
 
-    <div class="w3-container">
-        <h2>Mow the Lawn</h2>
-        <img src="images/mow_lawn.jpg">
-    </div>
+<div class="page" id="wash-car">
+<div class="w3-container w3-flat-nephritis">
+<h1>Your chore is:</h1>
+</div>
+<div class="w3-container">
+<h2>Wash the Car 🚗</h2>
+<img src="images/wash_car.jpg">
+</div>
 </div>
 
 <div class="page" id="rake-leaves">
-    <div class="w3-container w3-flat-nephritis">
-        <h1>Your chore is:</h1>
-    </div>
+<div class="w3-container w3-flat-nephritis">
+<h1>Your chore is:</h1>
+</div>
+<div class="w3-container">
+<h2>Rake Leaves 🍂</h2>
+<img src="images/rake_leaves.jpg">
+</div>
+</div>
 
-    <div class="w3-container">
-        <h2>Rake Leaves</h2>
-        <img src="images/rake_leaves.jpg">
-    </div>
+<div class="page" id="take-trash">
+<div class="w3-container w3-flat-nephritis">
+<h1>Your chore is:</h1>
+</div>
+<div class="w3-container">
+<h2>Take Out the Trash 🗑️</h2>
+<img src="images/take_out_trash.jpg">
+</div>
 </div>
 
 <div class="page" id="clean-room">
-    <div class="w3-container w3-flat-nephritis">
-        <h1>Your chore is:</h1>
-    </div>
-
-    <div class="w3-container">
-        <h2>Clean Your Room</h2>
-        <img src="images/clean_room.jpg">
-    </div>
+<div class="w3-container w3-flat-nephritis">
+<h1>Your chore is:</h1>
+</div>
+<div class="w3-container">
+<h2>Clean Your Room 🛏️</h2>
+<img src="images/clean_room.jpg">
+</div>
 </div>
 
-<div class="page" id="vacuum-house">
-    <div class="w3-container w3-flat-nephritis">
-        <h1>Your chore is:</h1>
-    </div>
-
-    <div class="w3-container">
-        <h2>Vacuum the House</h2>
-        <img src="images/vacuum_house.jpg">
-    </div>
+<div class="page" id="wipe-counters">
+<div class="w3-container w3-flat-nephritis">
+<h1>Your chore is:</h1>
 </div>
-
-<div class="page" id="fold-laundry">
-    <div class="w3-container w3-flat-nephritis">
-        <h1>Your chore is:</h1>
-    </div>
-
-    <div class="w3-container">
-        <h2>Fold Laundry</h2>
-        <img src="images/fold_laundry.jpg">
-    </div>
+<div class="w3-container">
+<h2>Wipe Down Counters ✨</h2>
+<img src="images/wipe_counters.jpg">
 </div>
-
-<div class="page" id="wash-dishes">
-    <div class="w3-container w3-flat-nephritis">
-        <h1>Your chore is:</h1>
-    </div>
-
-    <div class="w3-container">
-        <h2>Wash Dishes</h2>
-        <img src="images/wash_dishes.jpg">
-    </div>
 </div>
 
 <div class="page" id="deep-clean">
-    <div class="w3-container w3-flat-nephritis">
-        <h1>Your chore is:</h1>
-    </div>
-
-    <div class="w3-container">
-        <h2>Deep Clean the Kitchen</h2>
-        <img src="images/deep_clean_kitchen.jpg">
-    </div>
+<div class="w3-container w3-flat-nephritis">
+<h1>Your chore is:</h1>
+</div>
+<div class="w3-container">
+<h2>Deep Clean the Kitchen 🍽️</h2>
+<img src="images/deep_clean_kitchen.jpg">
+</div>
 </div>
 
-<div class="page" id="organize-desk">
-    <div class="w3-container w3-flat-nephritis">
-        <h1>Your chore is:</h1>
-    </div>
-
-    <div class="w3-container">
-        <h2>Organize Your Desk</h2>
-        <img src="images/organize_desk.jpg">
-    </div>
+<div class="page" id="vacuum-house">
+<div class="w3-container w3-flat-nephritis">
+<h1>Your chore is:</h1>
 </div>
+<div class="w3-container">
+<h2>Vacuum the House 🧹</h2>
+<img src="images/vacuum_house.jpg">
+</div>
+</div>
+
+<div class="page" id="fold-laundry">
+<div class="w3-container w3-flat-nephritis">
+<h1>Your chore is:</h1>
+</div>
+<div class="w3-container">
+<h2>Fold Laundry 👕</h2>
+<img src="images/fold_laundry.jpg">
+</div>
+</div>
+
+<div class="page" id="wash-dishes">
+<div class="w3-container w3-flat-nephritis">
+<h1>Your chore is:</h1>
+</div>
+<div class="w3-container">
+<h2>Wash Dishes 🍽️</h2>
+<img src="images/wash_dishes.jpg">
+</div>
+</div>
+
+<!-- FOOTER -->
 
 <footer class="w3-bottom w3-container w3-flat-nephritis">
-    <p>
-        HRI Project
-        <a href="#" class="w3-btn w3-white w3-round" style="float:right">
-            Start Over
-        </a>
-    </p>
-</footer>
 
+<p>
+HRI Coding Project
+<a href="#" class="w3-btn w3-white w3-round"
+style="float:right">
+Start Over
+</a>
+</p>
+</footer>
 </body>
 </html>
