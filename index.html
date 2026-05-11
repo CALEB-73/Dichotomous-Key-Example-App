@@ -24,26 +24,22 @@ There is an issue with the content sometimes getting trapped behind the footer. 
 
 -->
 	
-   <head> 
-      <title>Chore Helper</title>  
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="mobile-web-app-capable" content="yes">
-      <link rel="stylesheet" href="w3.css">
-      <link rel="stylesheet" href="w3-colors-flat.css">
-   </head> 
+  <!DOCTYPE html>
+<html>
 
+<head>
+    <title>Chore Helper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="w3-colors-flat.css">
+</head>
 
-<script>
-        /* This is where any required JavaScript should go. */
-
-</script>
-
-
-
-<style>	
+<style>
 .body {
-     margin: 0em;
+    margin: 0em;
 }
+
 .page {
     width: 100vw;
     height: 100vh;
@@ -52,244 +48,237 @@ There is an issue with the content sometimes getting trapped behind the footer. 
     left: -100vw;
     overflow-y: auto;
     z-index: 0;
-    background-color: hsl(0,0%,100%);
+    background-color: white;
 }
 
-  .page:target {
+.page:target {
     left: 0vw;
     z-index: 1;
+}
+
+img {
+    width: 100vw;
+    height: auto;
+    display: block;
 }
 </style>
 
 <body>
-<div id="header" class="w3-container w3-flat-carrot">
-	<h1>Chore Decision Helper</h1>
+
+<div id="header" class="w3-container w3-flat-nephritis">
+    <h1>Chore Decision Helper</h1>
 </div>
-	
+
 <div id="content" class="w3-container">
-	<br><br>
-	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
-	<p>This app helps you decide what chore to do based on your mood, energy level, and preferences.</p>
-    <img src="images/spider_dichotomous_key.png"
-        alt="Spider dichotomous key image"
-        style="width: 100vw; height: auto; display: block;"
-	>
-	<p><i>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</i></p>
- 	<br><br><br><br>
+    <br><br>
+
+    <a href="#q1" class="w3-btn w3-blue w3-round">
+        Get Started
+    </a>
+
+    <p>
+        This app helps you decide what chore to do based on your mood,
+        energy level, and preferences.
+    </p>
+
+    <br><br><br>
 </div>
-	
-<!--This is Question 1-->
-<div class="page" id="one">
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Are you feeling energetic</h1>
-	</div>
-	
-    	<div id="content" class="w3-container">
-        <p>
-            <a href="#q2a" class="w3-btn w3-green w3-round"> Yes </a>
-            <a href="#q2b" class="w3-btn w3-red w3-round"> No </a>
-        </p>
-		<br><br>
-    	</div>
+
+<!-- QUESTION 1 -->
+
+<div class="page" id="q1">
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Are you feeling energetic today?</h1>
+    </div>
+
+    <div class="w3-container">
+        <br>
+        <a href="#q2a" class="w3-btn w3-green w3-round">Yes</a>
+        <a href="#q2b" class="w3-btn w3-red w3-round">No</a>
+    </div>
 </div>
-<!--Energetic-->
+
+<!-- ENERGETIC -->
+
 <div class="page" id="q2a">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Would you rather be outside?</h1>
-	</div>
-	
-	<div id="content" class="w3-container">
-	<p></p> 
-    <a href="#q3a" class="w3-btn w3-green w3-round">Yes</a>
-    <p></p>
-    <a href="#q3b" class="w3-btn w3-red w3-round">No</a>
-	<br><br>
-	</div>
-</div>	
-<!--Not energetic-->
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Would you rather be outside?</h1>
+    </div>
+
+    <div class="w3-container">
+        <br>
+        <a href="#q3a" class="w3-btn w3-green w3-round">Yes</a>
+        <a href="#q3b" class="w3-btn w3-red w3-round">No</a>
+    </div>
+</div>
+
+<!-- NOT ENERGETIC -->
+
 <div class="page" id="q2b">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Do you want an easy chore?</h1>
-	</div>
-	
-	<div id="content" class="w3-container">
-	<p></p> 
-    <a href="#q4a" class="w3-btn w3-green w3-round"> Yes </a>
-    <p></p>
-    <a href="#q4a" class="w3-btn w3-red w3-round"> No </a>
-	<br><br>
-	</div>
-</div>	
-<!--Outside-->
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Do you want an easy chore?</h1>
+    </div>
+
+    <div class="w3-container">
+        <br>
+        <a href="#q4a" class="w3-btn w3-green w3-round">Yes</a>
+        <a href="#q4b" class="w3-btn w3-red w3-round">No</a>
+    </div>
+</div>
+
+<!-- OUTSIDE -->
+
 <div class="page" id="q3a">
-	<div class="w3-container w3-flat-nephritis">
-		<h1>Is the weather nice?</h1>
-	</div>
-	
-	<div id="content" class="w3-container">
-	<p></p> 
-    <a href="#mow-lawn" class="w3-btn w3-green w3-round"> Yes</a>
-    <p></p>
-    <a href="#rake-leaves" class="w3-btn w3-red w3-round">No</a>
-	</div>
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Is the weather nice?</h1>
+    </div>
+
+    <div class="w3-container">
+        <br>
+        <a href="#mow-lawn" class="w3-btn w3-green w3-round">Yes</a>
+        <a href="#rake-leaves" class="w3-btn w3-red w3-round">No</a>
+    </div>
 </div>
-<!--Inside Energetic-->
+
+<!-- INSIDE ENERGETIC -->
+
 <div class="page" id="q3b">
-	<div class="w3-container w3-flat-nephritis">
-		<h1>Do you want a quick chore?</h1>
-	</div>
-	
-	<div id="content" class="w3-container">
-	<p></p> 
-    <a href="#brown-recluse" class="w3-btn w3-grey w3-round"> 6 </a>
-    <p></p>
-    <a href="#movements" class="w3-btn w3-grey w3-round"> 8 </a>
-	<br><br>
-	</div>
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Do you want a quick chore?</h1>
+    </div>
+
+    <div class="w3-container">
+        <br>
+        <a href="#clean-room" class="w3-btn w3-green w3-round">Yes</a>
+        <a href="#vacuum-house" class="w3-btn w3-red w3-round">No</a>
+    </div>
 </div>
 
-<div class="page" id="movements">
-	<div class="w3-container w3-flat-carrot">
-		<h1>What type of movements does it make?</h1>
-	</div>
-	
-	<div id="content" class="w3-container">
-	<p></p> 
-    <a href="#jumping-spider" class="w3-btn w3-grey w3-round"> Jumps rather than runs. </a>
-    <p></p>
-    <a href="#wolf-spider" class="w3-btn w3-grey w3-round"> Fast-moving on the ground. </a>
-	<br><br>
-	</div>
+<!-- EASY CHORE -->
+
+<div class="page" id="q4a">
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Would you rather sit down?</h1>
+    </div>
+
+    <div class="w3-container">
+        <br>
+        <a href="#fold-laundry" class="w3-btn w3-green w3-round">Yes</a>
+        <a href="#wash-dishes" class="w3-btn w3-red w3-round">No</a>
+    </div>
 </div>
 
-<div class="page" id="cellar-spider">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Your answers best describe a</h1>
-	</div>
-	
-	<div id="content" class="w3-container">
-	<p></p> 
-    <H2>CELLAR SPIDER</H2>
-    <img src="images/cellar_spider.png"
-        alt="Cellar Spider Image"
-        style="width: 100vw; height: auto; display: block;"
-	>	
-  	<br><br>
-	</div>
-</div>	
-<div class="page" id="black-widow">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Your answers best describe a</h1>
-	</div>
-	
-	<div id="content" class="w3-container">
-	<p></p> 
-    <H2>BLACK WIDOW</H2>
-    <img src="images/black_widow.png"
-        alt="Black Widow Spider Image"
-        style="width: 100vw; height: auto; display: block;"
-	>
-	<br><br>
-	</div>
+<!-- HARDER CHORE -->
+
+<div class="page" id="q4b">
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Do you want something satisfying?</h1>
+    </div>
+
+    <div class="w3-container">
+        <br>
+        <a href="#deep-clean" class="w3-btn w3-green w3-round">Yes</a>
+        <a href="#organize-desk" class="w3-btn w3-red w3-round">No</a>
+    </div>
 </div>
 
-	<div class="page" id="orb-weaver">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Your answers best describe a</h1>
-	</div>
-	
-	<div id="content" class="w3-container">
-	<p></p> 
-    <H2>ORB WEAVER</H2>
-    <img src="images/orb_weaver.png"
-        alt="Orb Weaver Spider Image"
-        style="width: 100vw; height: auto; display: block;"
-	>	
-  	<br><br>
-	</div>
-</div>	
-<div class="page" id="house-spider">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Your answers best describe a</h1>
-	</div>
-	
-	<div id="content" class="w3-container">
-	<p></p> 
-    <H2>AMERICAN HOUSE SPIDER</H2>
-    <img src="images/american_house_spider.png"
-        alt="American House Spider Image"
-        style="width: 100vw; height: auto; display: block;"
-	>
-	<br><br>
-	</div>
-</div>	
+<!-- RESULTS -->
 
-<div class="page" id="yellow-spider">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Your answers best describe a</h1>
-	</div>
-	
-	<div id="content" class="w3-container">
-	<p></p> 
-    <H2>YELLOW SAC SPIDER</H2>
-    <img src="images/yellow_sac_spider.png"
-        alt="Yellow Sac Spider Image"
-        style="width: 100vw; height: auto; display: block;"
-	>
-	<br><br>
-	</div>
-</div>	
+<div class="page" id="mow-lawn">
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Your chore is:</h1>
+    </div>
 
-<div class="page" id="brown-recluse">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Your answers best describe a</h1>
-	</div>
-	
-	<div id="content" class="w3-container">
-	<p></p> 
-    <H2>BROWN RECLUSE SPIDER</H2>
-    <img src="images/brown_recluse.png"
-        alt="Brown Recluse Spider Image"
-        style="width: 100vw; height: auto; display: block;"
-	>
-	<br><br>
-	</div>
-</div>	
+    <div class="w3-container">
+        <h2>Mow the Lawn 🌱</h2>
+        <img src="images/mow_lawn.jpg">
+    </div>
+</div>
 
-<div class="page" id="jumping-spider">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Your answers best describe a</h1>
-	</div>
-	
-	<div id="content" class="w3-container">
-	<p></p> 
-    <H2>JUMPING SPIDER</H2>
-    <img src="images/jumping_spider.png"
-        alt="Jumping Spider Image"
-        style="width: 100vw; height: auto; display: block;"
-	>
-	<br><br>
-	</div>
-</div>	
+<div class="page" id="rake-leaves">
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Your chore is:</h1>
+    </div>
 
-<div class="page" id="wolf-spider">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Your answers best describe a</h1>
-	</div>
-	
-	<div id="content" class="w3-container">
-	<p></p> 
-    <H2>WOLF SPIDER</H2>
-    <img src="images/wolf_spider.png"
-        alt="Wolf Spider Image"
-        style="width: 100vw; height: auto; display: block;"
-	>
-	<br><br>
-	</div>
-</div>	
-	
-<footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>HRI!  <a href="#" class="w3-btn w3-grey w3-round" style="float: right"> Start Over</a></p>
+    <div class="w3-container">
+        <h2>Rake Leaves 🍂</h2>
+        <img src="images/rake_leaves.jpg">
+    </div>
+</div>
+
+<div class="page" id="clean-room">
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Your chore is:</h1>
+    </div>
+
+    <div class="w3-container">
+        <h2>Clean Your Room 🛏️</h2>
+        <img src="images/clean_room.jpg">
+    </div>
+</div>
+
+<div class="page" id="vacuum-house">
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Your chore is:</h1>
+    </div>
+
+    <div class="w3-container">
+        <h2>Vacuum the House 🧹</h2>
+        <img src="images/vacuum_house.jpg">
+    </div>
+</div>
+
+<div class="page" id="fold-laundry">
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Your chore is:</h1>
+    </div>
+
+    <div class="w3-container">
+        <h2>Fold Laundry 👕</h2>
+        <img src="images/fold_laundry.jpg">
+    </div>
+</div>
+
+<div class="page" id="wash-dishes">
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Your chore is:</h1>
+    </div>
+
+    <div class="w3-container">
+        <h2>Wash Dishes 🍽️</h2>
+        <img src="images/wash_dishes.jpg">
+    </div>
+</div>
+
+<div class="page" id="deep-clean">
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Your chore is:</h1>
+    </div>
+
+    <div class="w3-container">
+        <h2>Deep Clean the Kitchen ✨</h2>
+        <img src="images/deep_clean_kitchen.jpg">
+    </div>
+</div>
+
+<div class="page" id="organize-desk">
+    <div class="w3-container w3-flat-nephritis">
+        <h1>Your chore is:</h1>
+    </div>
+
+    <div class="w3-container">
+        <h2>Organize Your Desk 📚</h2>
+        <img src="images/organize_desk.jpg">
+    </div>
+</div>
+
+<footer class="w3-bottom w3-container w3-flat-nephritis">
+    <p>
+        HRI Project
+        <a href="#" class="w3-btn w3-white w3-round" style="float:right">
+            Start Over
+        </a>
+    </p>
 </footer>
 
 </body>
